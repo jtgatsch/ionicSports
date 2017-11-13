@@ -1,18 +1,38 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="menu">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>BSPORTS</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4><h4 style="margin-top: 9px">Deporte</h4></ion-col>
+      <ion-col col-8>
+        <ion-list >
+          <ion-item class="ion-input-select--cor">
+            <ion-select [(ngModel)]="gaming" interface="popover" cancelText="Cancelar" placeholder="Seleccione...">
+              <ion-option value="nes">NES</ion-option>
+              <ion-option value="n64">Nintendo64</ion-option>
+              <ion-option value="ps">PlayStation</ion-option>
+              <ion-option value="genesis">Sega Genesis</ion-option>
+              <ion-option value="saturn">Sega Saturn</ion-option>
+              <ion-option value="snes">SNES</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-card>
+    <img src="img/Gambeta.jpg" style="width: 100%" />
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
+
 </ion-content>
