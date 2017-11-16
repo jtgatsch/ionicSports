@@ -1,86 +1,168 @@
 <ion-header>
  	<ion-navbar color="menu">
     	<button ion-button menuToggle>
-      		<ion-icon name="menu"></ion-icon>
+		    <ion-icon name="menu"></ion-icon>
     	</button>
     	<ion-title>BSPORTS</ion-title>
   	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content no-padding>
 
-	<ion-card style="padding-top: 5px;">
-	  	<ion-grid>
-			<ion-row>
-	      		<ion-col col-4><h2 style="margin-top: 9px">Deporte</h2></ion-col>
-	      		<ion-col col-8>
-	        		<ion-list >
-	          			<ion-item class="ion-input-select--cor">
-	            			<ion-select [(ngModel)]="gaming" interface="popover" cancelText="Cancelar" placeholder="Seleccione...">
-	              				<ion-option value="nes">NES</ion-option>
-	              				<ion-option value="n64">Nintendo64</ion-option>
-	              				<ion-option value="ps">PlayStation</ion-option>
-	              				<ion-option value="genesis">Sega Genesis</ion-option>
-	              				<ion-option value="saturn">Sega Saturn</ion-option>
-	              				<ion-option value="snes">SNES</ion-option>
-	            			</ion-select>
-	          			</ion-item>
-	        		</ion-list>
-	      		</ion-col>
-	    	</ion-row>
-	  	</ion-grid>
- 	</ion-card>
+  <ion-card class="sombra-general">
+    <ion-grid>
+      <ion-row>
+    		<ion-col col-3 no-margin>
+          <div id="padre">
+          <div id="hijo" style="font-size: 4vw; font-weight: bold; text-align: center;">Deporte</div>
+          </div>
+        </ion-col>
+    		<ion-col col-9 no-margin>
+      		<ion-list>
+      			<ion-item>
+              <ion-select [(ngModel)]="gaming" interface="popover" cancelText="Cancelar" placeholder="Seleccione...">
+        				<ion-option value="nes">NES</ion-option>
+        				<ion-option value="n64">Nintendo64</ion-option>
+        				<ion-option value="ps">PlayStation</ion-option>
+        				<ion-option value="genesis">Sega Genesis</ion-option>
+        				<ion-option value="saturn">Sega Saturn</ion-option>
+        				<ion-option value="snes">SNES</ion-option>
+        			</ion-select>
+            </ion-item>
+      		</ion-list>
+    		</ion-col>
+    	</ion-row>
+    </ion-grid>
+  </ion-card>
 
-  	<ion-card padding>
-    	<img src="img/Gambeta.jpg" style="width: 100%" />
-  	</ion-card>
+  <!-- SECCION CENTRAL -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-9 no-padding>
+      	<ion-card no-padding style="height: 90%">
+          <div id="padre" align="center" style="width: 100%">
+            <div id="hijo"><img src="img/Gambeta.jpg" style="width: 100%;"/></div>
+          </div>
+      	</ion-card>
+      </ion-col>
 
-  	<h4 padding>Mis Videos</h4>
+      <!-- VIDEOS LATERALES -->
+      <ion-col col-3 no-padding>
+        <ion-card no-padding style="height: 90%">
+          <div align="center" id="padre">
+            <div id="hijo">
+            <img src="img/Gambeta.jpg" style="width: 80%; height: 18vw;"/><br>
+            <img src="img/Gambeta.jpg" style="width: 80%; height: 18vw;"/><br>
+            <img src="img/Gambeta.jpg" style="width: 80%; height: 18vw;"/>
+          </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  	<div class="hr"></div>
 
-  	<ion-grid>
-  		<ion-row>
-  			<ion-col col-6>
-	  			<button ion-button color="light" round icon-left><ion-icon name="film"></ion-icon>Grabar Vídeo</button>
-	  		</ion-col>
-	  		<ion-col col-6>
-	  			<button ion-button color="light" round icon-left><ion-icon name="albums"></ion-icon>Cargar Archivo</button>
-	  		</ion-col>
-	  	</ion-row>
-  	</ion-grid>
+  <!-- SECCION MIS VIDEOS -->
+  <h4 style="margin: 10px; font-size: 6vw">Mis Videos</h4>
 
-  	<ion-grid>
-    	<ion-row>
-      		<ion-col col-6>
-      			<ion-card>
-      				<img src="img/Gambeta.jpg" style="width: 100%" />
-      				<div class="card-title">São Paulo</div>
-    				<div class="card-subtitle">41 Listings</div>
-	  			</ion-card>
-      		</ion-col>
-      		<ion-col col-6>
-        		<ion-card>
-      				<img src="img/Gambeta.jpg" style="width: 100%" />
-      				<div class="card-title">São Paulo</div>
-    				<div class="card-subtitle">41 Listings</div>
-	  			</ion-card>
-      		</ion-col>
-      		<ion-col col-6>
-      			<ion-card>
-      				<img src="img/Gambeta.jpg" style="width: 100%" />
-      				<div class="card-title">São Paulo</div>
-    				<div class="card-subtitle">41 Listings</div>
-	  			</ion-card>
-      		</ion-col>
-      		<ion-col col-6>
-      			<ion-card>
-      				<img src="img/Gambeta.jpg" style="width: 100%" />
-      				<div class="card-title">São Paulo</div>
-    				<div class="card-subtitle">41 Listings</div>
-	  			</ion-card>
-      		</ion-col>
-		</ion-row>
+	<div class="hr"></div>
+
+  <!-- BOTONES -->
+	<ion-grid>
+		<ion-row>
+			<ion-col col-4>
+  			<button ion-button small color="light" round icon-left no-padding style="font-size: 2.5vw"><ion-icon name="film"></ion-icon>Grabar Vídeo</button>
+  		</ion-col>
+  		<ion-col col-4>
+  			<button ion-button small color="light" round icon-left no-padding style="font-size: 2.5vw"><ion-icon name="albums"></ion-icon>Cargar Archivo</button>
+  		</ion-col>
+  	</ion-row>
 	</ion-grid>
+
+  <!-- VIDEOS -->
+	<ion-grid>
+  	<ion-row>
+  		<ion-col col-6>
+  			<ion-card class="sombra-general">
+  				<img src="img/Gambeta.jpg" style="width: 100%" />
+          <ion-grid>
+            <ion-row>
+              <ion-col col-10>
+                <div class="card-title vid-font">Velocidad</div>
+                <div class="card-subtitle vid-font-small">16/11/2017</div>
+              </ion-col>
+              <ion-col col-2>
+                <div id="padre">
+                  <div id="hijo">
+                    <ion-icon name="more" class="vid-icon"></ion-icon>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+  			</ion-card>
+  		</ion-col>
+  		<ion-col col-6>
+    		<ion-card class="sombra-general">
+  				<img src="img/Gambeta.jpg" style="width: 100%" />
+  				<ion-grid>
+            <ion-row>
+              <ion-col col-10>
+                <div class="card-title vid-font">São Paulo</div>
+                <div class="card-subtitle vid-font-small">41 Listings</div>
+              </ion-col>
+              <ion-col col-2>
+                <div id="padre">
+                  <div id="hijo">
+                    <ion-icon name="more" class="vid-icon"></ion-icon>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+  		</ion-col>
+  		<ion-col col-6>
+  			<ion-card class="sombra-general">
+  				<img src="img/Gambeta.jpg" style="width: 100%" />
+  				<ion-grid>
+            <ion-row>
+              <ion-col col-10>
+                <div class="card-title vid-font">São Paulo</div>
+                <div class="card-subtitle vid-font-small">41 Listings</div>
+              </ion-col>
+              <ion-col col-2>
+                <div id="padre">
+                  <div id="hijo">
+                    <ion-icon name="more" class="vid-icon"></ion-icon>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+  		</ion-col>
+  		<ion-col col-6>
+  			<ion-card class="sombra-general">
+  				<img src="img/Gambeta.jpg" style="width: 100%" />
+  				<ion-grid>
+            <ion-row>
+              <ion-col col-10>
+                <div class="card-title vid-font">São Paulo</div>
+                <div class="card-subtitle vid-font-small">41 Listings</div>
+              </ion-col>
+              <ion-col col-2>
+                <div id="padre">
+                  <div id="hijo">
+                    <ion-icon name="more" class="vid-icon"></ion-icon>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+  		</ion-col>
+	 </ion-row>
+  </ion-grid>
 
 </ion-content>
