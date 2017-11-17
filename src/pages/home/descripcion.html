@@ -1,0 +1,89 @@
+<ion-header>
+ 	<ion-navbar color="menu">
+    	<button ion-button menuToggle>
+		    <ion-icon name="menu"></ion-icon>
+    	</button>
+    	<ion-title>BSPORTS</ion-title>
+  	</ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+  <!-- SECCION CENTRAL -->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 no-padding>
+      	<ion-card no-padding style="height: 90%">
+          <div id="padre" align="center" style="width: 100%">
+            <div id="hijo"><img src="img/Gambeta.jpg" style="width: 100%;"/></div>
+          </div>
+      	</ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <!-- SECCION MIS VIDEOS -->
+  <h4 style="margin: 10px; font-size: 4.5vw">Descripción</h4>
+
+	<div class="hr"></div>
+
+  <!-- VIDEOS -->
+	<ion-grid>
+  	<ion-row>
+  		<ion-col col-3>
+        <div id="padre">
+  			 <div id="hijo" style="font-size: 3.8vw; font-weight: bold; text-align: center;">Deporte</div>
+        </div>
+  		</ion-col>
+  		<ion-col col-9>
+        <div id="padre-select">
+      		<ion-list class="sombra-general" id="hijo">
+            <ion-item style="padding-left: 0;">
+              <ion-select [(ngModel)]="gaming" interface="popover" cancelText="Cancelar" placeholder="Seleccione...">
+                <ion-option value="nes">NES</ion-option>
+                <ion-option value="n64">Nintendo64</ion-option>
+                <ion-option value="ps">PlayStation</ion-option>
+                <ion-option value="genesis">Sega Genesis</ion-option>
+                <ion-option value="saturn">Sega Saturn</ion-option>
+                <ion-option value="snes">SNES</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </div>
+  		</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <div id="padre">
+         <div id="hijo" style="font-size: 3.8vw; font-weight: bold; text-align: center;">Prueba</div>
+        </div>
+      </ion-col>
+      <ion-col col-9>
+        <div id="padre-select">
+          <ion-list class="sombra-general" id="hijo">
+            <ion-item style="padding-left: 0;">
+              <ion-select [(ngModel)]="gaming" interface="popover" cancelText="Cancelar" placeholder="Seleccione...">
+                <ion-option value="nes">NES</ion-option>
+                <ion-option value="n64">Nintendo64</ion-option>
+                <ion-option value="ps">PlayStation</ion-option>
+                <ion-option value="genesis">Sega Genesis</ion-option>
+                <ion-option value="saturn">Sega Saturn</ion-option>
+                <ion-option value="snes">SNES</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <br>
+
+  <div align="center">
+    <button ion-button class="btn-alone" color="light" round>
+      <div style="font-size: 3.3vw">Ingresar</div>
+    </button>
+  </div>
+
+</ion-content>

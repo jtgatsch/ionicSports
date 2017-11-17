@@ -9,27 +9,29 @@
 
 <ion-content no-padding>
 
-  <ion-card class="sombra-general">
+  <ion-card>
     <ion-grid>
       <ion-row>
-    		<ion-col col-3 no-margin>
+    		<ion-col col-3>
           <div id="padre">
           <div id="hijo" style="font-size: 4vw; font-weight: bold; text-align: center;">Deporte</div>
           </div>
         </ion-col>
-    		<ion-col col-9 no-margin>
-      		<ion-list>
-      			<ion-item>
-              <ion-select [(ngModel)]="gaming" interface="popover" cancelText="Cancelar" placeholder="Seleccione...">
-        				<ion-option value="nes">NES</ion-option>
-        				<ion-option value="n64">Nintendo64</ion-option>
-        				<ion-option value="ps">PlayStation</ion-option>
-        				<ion-option value="genesis">Sega Genesis</ion-option>
-        				<ion-option value="saturn">Sega Saturn</ion-option>
-        				<ion-option value="snes">SNES</ion-option>
-        			</ion-select>
-            </ion-item>
-      		</ion-list>
+    		<ion-col col-9>
+          <div id="padre-select">
+        		<ion-list class="sombra-general" id="hijo">
+        			<ion-item style="padding-left: 0;">
+                <ion-select [(ngModel)]="gaming" interface="popover" cancelText="Cancelar" placeholder="Seleccione...">
+          				<ion-option value="nes">NES</ion-option>
+          				<ion-option value="n64">Nintendo64</ion-option>
+          				<ion-option value="ps">PlayStation</ion-option>
+          				<ion-option value="genesis">Sega Genesis</ion-option>
+          				<ion-option value="saturn">Sega Saturn</ion-option>
+          				<ion-option value="snes">SNES</ion-option>
+          			</ion-select>
+              </ion-item>
+        		</ion-list>
+          </div>
     		</ion-col>
     	</ion-row>
     </ion-grid>
@@ -63,18 +65,18 @@
 
 
   <!-- SECCION MIS VIDEOS -->
-  <h4 style="margin: 10px; font-size: 6vw">Mis Videos</h4>
+  <h4 style="margin: 10px; font-size: 4.5vw">Mis Videos</h4>
 
 	<div class="hr"></div>
 
   <!-- BOTONES -->
 	<ion-grid>
 		<ion-row>
-			<ion-col col-4>
-  			<button ion-button small color="light" round icon-left no-padding style="font-size: 2.5vw"><ion-icon name="film"></ion-icon>Grabar Vídeo</button>
+			<ion-col col-5>
+  			<button ion-button color="light" round icon-left style="font-size: 2.7vw; max-width: 100%"><ion-icon name="film"></ion-icon>Grabar Vídeo</button>
   		</ion-col>
-  		<ion-col col-4>
-  			<button ion-button small color="light" round icon-left no-padding style="font-size: 2.5vw"><ion-icon name="albums"></ion-icon>Cargar Archivo</button>
+  		<ion-col col-5>
+  			<button ion-button color="light" round icon-left style="font-size: 2.7vw; max-width: 100%"><ion-icon name="albums"></ion-icon>Cargar Archivo</button>
   		</ion-col>
   	</ion-row>
 	</ion-grid>
@@ -84,7 +86,7 @@
   	<ion-row>
   		<ion-col col-6>
   			<ion-card class="sombra-general">
-  				<img src="img/Gambeta.jpg" style="width: 100%" />
+  				<img src="img/Gambeta.jpg" class="img-vid-small"/>
           <ion-grid>
             <ion-row>
               <ion-col col-10>
@@ -104,7 +106,7 @@
   		</ion-col>
   		<ion-col col-6>
     		<ion-card class="sombra-general">
-  				<img src="img/Gambeta.jpg" style="width: 100%" />
+  				<img src="img/Gambeta.jpg" class="img-vid-small"/>
   				<ion-grid>
             <ion-row>
               <ion-col col-10>
@@ -124,7 +126,7 @@
   		</ion-col>
   		<ion-col col-6>
   			<ion-card class="sombra-general">
-  				<img src="img/Gambeta.jpg" style="width: 100%" />
+  				<img src="img/Gambeta.jpg" class="img-vid-small"/>
   				<ion-grid>
             <ion-row>
               <ion-col col-10>
@@ -144,7 +146,7 @@
   		</ion-col>
   		<ion-col col-6>
   			<ion-card class="sombra-general">
-  				<img src="img/Gambeta.jpg" style="width: 100%" />
+  				<img src="img/Gambeta.jpg" class="img-vid-small"/>
   				<ion-grid>
             <ion-row>
               <ion-col col-10>
@@ -166,3 +168,10 @@
   </ion-grid>
 
 </ion-content>
+
+<ion-list>
+  <button ion-item *ngFor="let item of items" (click)="openNavDetailsPage(item)" icon-start>
+    <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
+    {{ item.title }}
+  </button>
+</ion-list>
