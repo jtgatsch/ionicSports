@@ -1,0 +1,62 @@
+page-login {
+
+}
+
+.margin-form{
+	margin-top: 4%;
+}
+
+.margin-btn{
+	margin-top: 4%;
+}
+
+.margin-txt{
+	margin-top: 12%;
+}
+
+.login{
+    background: url("../img/Fondo2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.logo{
+	width: 35%;
+	height: auto;
+	margin: auto;
+	display: block;
+}
+
+.txt-1{
+	text-align: center;
+	color: white;
+	font-size: 4.8vw;
+}
+
+.txt-2{
+	color: #fbda3b;
+}
+
+.input-txt{
+	display: block;
+	margin: auto;
+	width: 80%;
+	color: white;
+	background-color: black;
+	opacity: 0.5;
+	border-radius: 10px;
+}
+
+.btn-principal{
+	display: block;
+	margin: auto;
+	font-size: 5vw;
+	font-weight: bold;
+	width: 80%;
+	height: 11vw;
+	color: white;
+	background-color: #b9a62e;
+	opacity: 0.8;
+	border-radius: 5px;
+}

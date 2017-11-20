@@ -5,6 +5,9 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { PopoverPage } from '../pages/popover/popover';
+import { DescripcionPage } from '../pages/descripcion/descripcion';
+import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,6 +16,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
+    LoginPage,
+    PopoverPage,
+    DescripcionPage,
     ListPage
   ],
   imports: [
@@ -23,6 +29,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
+    LoginPage,
+    PopoverPage,
+    DescripcionPage,
     ListPage
   ],
   providers: [
