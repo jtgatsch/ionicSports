@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, ViewController, NavParams } from 'ionic-angular';
+import { IonicPage, ViewController, NavParams, NavController } from 'ionic-angular';
+import { DescripcionPage } from '../descripcion/descripcion';
 
 /**
  * Generated class for the PopoverPage page.
@@ -12,19 +13,21 @@ import { IonicPage, ViewController, NavParams } from 'ionic-angular';
 @Component({
   template: `
     <ion-list>
-      <button ion-item (click)="close()" class="font-normal">Learn Ionic</button>
-      <button ion-item (click)="close()" class="font-normal">Documentation</button>
-      <button ion-item (click)="close()" class="font-normal">Showcase</button>
-      <button ion-item (click)="close()" class="font-normal">GitHub Repo</button>
+      <button ion-item (click)="onClick()" class="font-normal">Editar Vídeo</button>
+      <button ion-item (click)="onClick()" class="font-normal">Quitar Vídeos</button>
     </ion-list>
   `
 })
 export class PopoverPage {
 
-  constructor(public viewCtrl: ViewController) {}
+  constructor(public viewCtrl: ViewController, public navParams: NavParams, public navCtrl: NavController) {}
 
   close() {
     this.viewCtrl.dismiss();
+  }
+
+  onClick() {
+    this.navCtrl.push(DescripcionPage)
   }
 
 }

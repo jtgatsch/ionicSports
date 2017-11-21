@@ -16,7 +16,7 @@ import { RegistrarsePage } from '../pages/registrarse/registrarse';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = RegistrarsePage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -28,9 +28,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Descripción', component: DescripcionPage },
       { title: 'Login', component: LoginPage },
-      { title: 'Registrarse', component: RegistrarsePage },
-      { title: 'List', component: ListPage },
-      { title: 'Popover', component: PopoverPage }
+      { title: 'Registrarse', component: RegistrarsePage }
     ];
 
   }
