@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { PopoverPage } from '../pages/popover/popover';
 import { DescripcionPage } from '../pages/descripcion/descripcion';
 import { LoginPage } from '../pages/login/login';
+import { RegistrarsePage } from '../pages/registrarse/registrarse';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,6 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     LoginPage,
+    RegistrarsePage,
     PopoverPage,
     DescripcionPage,
     ListPage
@@ -30,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     LoginPage,
+    RegistrarsePage,
     PopoverPage,
     DescripcionPage,
     ListPage

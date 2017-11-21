@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { PopoverPage } from '../pages/popover/popover';
 import { DescripcionPage } from '../pages/descripcion/descripcion';
 import { LoginPage } from '../pages/login/login';
+import { RegistrarsePage } from '../pages/registrarse/registrarse';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import { LoginPage } from '../pages/login/login';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = RegistrarsePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -27,6 +28,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Descripción', component: DescripcionPage },
       { title: 'Login', component: LoginPage },
+      { title: 'Registrarse', component: RegistrarsePage },
       { title: 'List', component: ListPage },
       { title: 'Popover', component: PopoverPage }
     ];

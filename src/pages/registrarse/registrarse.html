@@ -1,0 +1,111 @@
+<ion-content class="login">
+
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12>
+				<img src="img/Logo2.png" class="logo" />
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-grid class="margin-form">
+		<ion-row>
+			<ion-col col-12>
+				<ion-input placeholder="Nombres" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-input type="password" placeholder="Apellidos" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-input placeholder="Rut" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-row>
+					<ion-col col-4 no-padding>
+						<ion-list>
+				            <ion-item style="padding-left: 0;" class="select-rg">
+				              <ion-select [(ngModel)]="dia" interface="popover" cancelText="Cancelar" placeholder="Día...">
+				                <ion-option value="nes">01</ion-option>
+				                <ion-option value="n64">02</ion-option>
+				                <ion-option value="ps">03</ion-option>
+				                <ion-option value="genesis">04</ion-option>
+				                <ion-option value="saturn">05</ion-option>
+				                <ion-option value="snes">06</ion-option>
+				              </ion-select>
+				            </ion-item>
+			          	</ion-list>
+					</ion-col>
+					<ion-col col-4 no-padding>
+						<ion-list>
+				            <ion-item style="padding-left: 0;" class="select-rg">
+				              <ion-select [(ngModel)]="mes" interface="popover" cancelText="Cancelar" placeholder="Mes...">
+				                <ion-option value="nes">01</ion-option>
+				                <ion-option value="n64">02</ion-option>
+				                <ion-option value="ps">03</ion-option>
+				                <ion-option value="genesis">04</ion-option>
+				                <ion-option value="saturn">05</ion-option>
+				                <ion-option value="snes">06</ion-option>
+				              </ion-select>
+				            </ion-item>
+			          	</ion-list>
+					</ion-col>
+					<ion-col col-4 no-padding>
+						<ion-list>
+				            <ion-item style="padding-left: 0;" class="select-rg-2">
+				              <ion-select [(ngModel)]="anio" interface="popover" cancelText="Cancelar" placeholder="Año...">
+				                <ion-option value="nes">1994</ion-option>
+				                <ion-option value="n64">1995</ion-option>
+				                <ion-option value="ps">1996</ion-option>
+				                <ion-option value="genesis">1997</ion-option>
+				                <ion-option value="saturn">1998</ion-option>
+				                <ion-option value="snes">1999</ion-option>
+				              </ion-select>
+				            </ion-item>
+			          	</ion-list>
+					</ion-col>
+				</ion-row>
+			</ion-col>
+			<ion-col col-12>
+				<ion-input placeholder="Email" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-input placeholder="Clave" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-input placeholder="Dirección" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-input placeholder="Telefóno" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-input placeholder="Estatura" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-input placeholder="Peso" class="input-txt"></ion-input>
+			</ion-col>
+			<ion-col col-12>
+				<ion-list>
+		            <ion-item style="padding-left: 0;" class="select-rg-2">
+		              <ion-select [(ngModel)]="nacionalidad" interface="popover" cancelText="Cancelar" placeholder="Nacionalidad">
+		                <ion-option value="nes">1994</ion-option>
+		                <ion-option value="n64">1995</ion-option>
+		                <ion-option value="ps">1996</ion-option>
+		                <ion-option value="genesis">1997</ion-option>
+		                <ion-option value="saturn">1998</ion-option>
+		                <ion-option value="snes">1999</ion-option>
+		              </ion-select>
+		            </ion-item>
+	          	</ion-list>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+	<ion-grid class="margin-btn">
+		<ion-row>
+			<ion-col col-12>
+				<button class="btn-principal">Registrarse</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>
