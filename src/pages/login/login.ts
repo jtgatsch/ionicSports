@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegistrarsePage } from '../registrarse/registrarse';
+import { StatusBar } from '@ionic-native/status-bar';
 
 /**
  * Generated class for the LoginPage page.
@@ -16,7 +17,17 @@ import { RegistrarsePage } from '../registrarse/registrarse';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private statusBar: StatusBar) {
+  }
+
+  stBar() {
+
+  // let status bar overlay webview
+  this.statusBar.overlaysWebView(false);
+
+  // set status bar to white
+  this.statusBar.backgroundColorByHexString('#ffffff');
+
   }
 
   ionViewDidLoad() {

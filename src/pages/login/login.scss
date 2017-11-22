@@ -9,14 +9,12 @@ page-login {
 	}
 
 	.margin-txt{
-		margin-top: 12%;
+		margin-top: 8%;
 	}
-
+	
 	.login{
-	    background: url("../img/Fondo2.png") no-repeat center center fixed;
-	    -webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    background-size: cover;
+	    background:url('../img/Fondo2.png') no-repeat;
+		-webkit-background-size: 120% auto;
 	}
 
 	.logo{
