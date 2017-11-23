@@ -9,6 +9,7 @@ import { PopoverPage } from '../pages/popover/popover';
 import { DescripcionPage } from '../pages/descripcion/descripcion';
 import { LoginPage } from '../pages/login/login';
 import { RegistrarsePage } from '../pages/registrarse/registrarse';
+import { RecuperarClavePage } from '../pages/recuperar-clave/recuperar-clave';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,6 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     LoginPage,
     RegistrarsePage,
+    RecuperarClavePage,
     PopoverPage,
     DescripcionPage,
     ListPage
@@ -33,6 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     LoginPage,
     RegistrarsePage,
+    RecuperarClavePage,
     PopoverPage,
     DescripcionPage,
     ListPage

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegistrarsePage } from '../registrarse/registrarse';
+import { RecuperarClavePage } from '../recuperar-clave/recuperar-clave';
 import { StatusBar } from '@ionic-native/status-bar';
 
 /**
@@ -36,6 +37,10 @@ export class LoginPage {
 
   onClick() {
   	this.navCtrl.push(RegistrarsePage)
+  }
+
+  linkRecClave() {
+    this.navCtrl.push(RecuperarClavePage)
   }
 
 }

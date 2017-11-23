@@ -9,6 +9,7 @@ import { PopoverPage } from '../pages/popover/popover';
 import { DescripcionPage } from '../pages/descripcion/descripcion';
 import { LoginPage } from '../pages/login/login';
 import { RegistrarsePage } from '../pages/registrarse/registrarse';
+import { RecuperarClavePage } from '../pages/recuperar-clave/recuperar-clave';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,7 +17,7 @@ import { RegistrarsePage } from '../pages/registrarse/registrarse';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -28,7 +29,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Descripción', component: DescripcionPage },
       { title: 'Login', component: LoginPage },
-      { title: 'Registrarse', component: RegistrarsePage }
+      { title: 'Registrarse', component: RegistrarsePage },
+      { title: 'Recuperar Clave', component: RecuperarClavePage }
     ];
 
   }
