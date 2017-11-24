@@ -14,7 +14,8 @@ import { DescripcionPage } from '../descripcion/descripcion';
   template: `
     <ion-list>
       <button ion-item (click)="onClick()" class="font-normal">Editar Vídeo</button>
-      <button ion-item (click)="onClick()" class="font-normal">Quitar Vídeos</button>
+      <button ion-item class="font-normal">Quitar Vídeos</button>
+      <button ion-item class="font-normal">Quitar Vídeos</button>
     </ion-list>
   `
 })

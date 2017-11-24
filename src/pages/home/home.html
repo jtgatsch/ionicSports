@@ -20,7 +20,7 @@
           <div id="padre-select">
             <ion-list class="sombra-general" id="hijo">
               <ion-item style="padding-left: 0;">
-                <ion-select [(ngModel)]="gaming" interface="popover" cancelText="Cancelar" placeholder="Seleccione...">
+                <ion-select [(ngModel)]="gaming" interface="action-sheet" cancelText="Cancelar" placeholder="Seleccione...">
                   <ion-option value="nes">NES</ion-option>
                   <ion-option value="n64">Nintendo64</ion-option>
                   <ion-option value="ps">PlayStation</ion-option>
@@ -74,7 +74,7 @@
   <ion-grid no-padding class="margin-top-2">
     <ion-row>
       <ion-col col-5>
-        <button ion-button color="light" round icon-left class="btn-vid"><ion-icon name="film">   
+        <button menuToggle ion-button color="light" round icon-left class="btn-vid"><ion-icon name="film">   
         </ion-icon>Grabar Vídeo</button>
       </ion-col>
       <ion-col col-5>
@@ -85,7 +85,7 @@
   </ion-grid>
 
   <!-- VIDEOS -->
-  <ion-grid no-padding>
+  <ion-grid>
     <ion-row>
       <ion-col col-6>
         <ion-card class="sombra-general">
