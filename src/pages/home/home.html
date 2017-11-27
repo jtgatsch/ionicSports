@@ -9,7 +9,7 @@
 
 <ion-content no-padding>
 
-    <ion-grid class="margin-top-1">
+    <ion-grid class="margin-top-1" id="gridSuperior">
       <ion-row>
         <ion-col col-3>
           <div id="padre" style="margin-left: 1.5vw;">
@@ -18,7 +18,7 @@
         </ion-col>
         <ion-col col-9>
           <div id="padre-select">
-            <ion-list class="sombra-general" id="hijo">
+            <ion-list id="hijo">
               <ion-item style="padding-left: 0;">
                 <ion-select [(ngModel)]="gaming" interface="action-sheet" cancelText="Cancelar" placeholder="Seleccione...">
                   <ion-option value="nes">NES</ion-option>
@@ -36,36 +36,35 @@
     </ion-grid>
 
   <!-- SECCION CENTRAL -->
-  <ion-grid>
+  <ion-grid id="contenedor-video-actual">
     <ion-row>
-      <ion-col col-8>
-        <ion-card style="height: 100%">
-          <div align="center" id="padre">
-            <div id="hijo">
-              <img src="img/Gambeta.jpg" style="width: 92%; height: auto;"/>
-            </div>
-          </div>
-        </ion-card>
+      <ion-col col-9 id="columna-video-actual">
+        
+          
+              <img id="btn_play" src="img/btn_play.png"/>
+          
       </ion-col>
 
       <!-- VIDEOS LATERALES -->
-      <ion-col col-4>
-        <ion-card style="height: 100%">
+      <ion-col col-3 id="columna-ejemplos">
+        
           <div align="center" id="padre">
+		  
             <div id="hijo">
+			Ejemplos:
               <img src="img/Velocidad.jpg" style="width: 90%; height: 20vw;"/><br>
               <img src="img/Gambeta.jpg" style="width: 90%; height: 20vw;"/><br>
               <img src="img/Gambeta.jpg" style="width: 90%; height: 20vw;"/>
             </div>
           </div>
-        </ion-card>
+        
       </ion-col>
     </ion-row>
   </ion-grid>
 
 
   <!-- SECCION MIS VIDEOS -->
-  <h4 class="font-title">Mis Videos</h4>
+  <h4 class="font-title" id="misvideos">Mis Videos</h4>
 
   <div class="hr"></div>
 

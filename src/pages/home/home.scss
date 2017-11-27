@@ -159,3 +159,82 @@ page-home {
 	.toolbar-title-md {
     	color: white;
 	}
+	
+	#misvideos{
+	padding-top:10px;
+	margin-top: -1%;
+    z-index: 10000000;
+    position: relative;
+    background-color:#fff ;
+    border: 1px solid #ffffff; 
+    margin-left:25px; 
+	margin-left:0px; 
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.5);
+	padding-left: 20px;
+	}
+	
+	#misvideos2:after {
+    content:"";
+    position:absolute;
+    width:100%;
+    top:25px;
+	left:0px;
+    z-index:10000001;
+    transform:scale(.9);
+    background-color:white;
+	height:100px;
+	}
+	
+	
+	#columna-ejemplos{
+		background-color: white;
+		margin:0px;
+		margin-left:-0.1%;
+		
+		-webkit-box-shadow: -2px 0px 6px 1px rgba(65,65,65,1);
+		-moz-box-shadow: -2px 0px 6px 1px rgba(65,65,65,1);
+		box-shadow: -2px 0px 6px 1px rgba(65,65,65,1);
+	}
+	#columna-video-actual{
+		padding:0px;
+		margin:0px;
+		vertical-align: middle;
+		background:url('../img/Gambeta.jpg') no-repeat;
+		background-size:100% auto;
+		text-align:center;
+	}
+	
+	#contenedor-video-actual{
+		padding:0px;
+		margin-top:-6%; 
+		position: relative;
+		z-index:1;
+	}
+	
+	#gridSuperior{
+	padding-top:10px;
+	
+    z-index: 10000005;
+    position: relative;
+    background-color:#fff ;
+    border: 1px solid #ffffff; 
+    margin-left:25px; 
+	margin-left:0px; 
+     background-color:#fff ;
+    border: 1px solid #ffffff; 
+    margin-left:25px; 
+	margin-left:0px; 
+    -webkit-box-shadow: 0px 4px 3px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 4px 3px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 4px 3px rgba(50, 50, 50, 0.5);
+	}
+	
+	
+	#btn_play{
+		
+		height: 35%;
+		margin-top: 32.5%;
+		opacity: 0.55;
+	}
