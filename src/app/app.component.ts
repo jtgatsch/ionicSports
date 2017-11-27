@@ -17,7 +17,7 @@ import { RecuperarClavePage } from '../pages/recuperar-clave/recuperar-clave';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = DescripcionPage;
 
   pages: Array<{title: string, component: any}>;
 

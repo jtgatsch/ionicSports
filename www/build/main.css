@@ -28089,7 +28089,7 @@ page-descripcion #hijo {
 
 page-descripcion .font-title {
   margin-left: 4vw;
-  margin-top: 7vw;
+  margin-top: -3vw;
   font-size: 4.5vw;
   font-weight: bold;
 }
@@ -28112,6 +28112,34 @@ page-descripcion .margin-1 {
 
 page-descripcion .padd-txt-sel {
   padding-left: 2vw;
+}
+
+page-descripcion #contenedor-video-actual {
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+page-descripcion #misvideos {
+  padding-top: 10px;
+  z-index: 10000000;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  margin-left: 25px;
+  margin-left: 0px;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.5);
+  padding-left: 20px;
+}
+
+page-descripcion #columna-video-actual {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+  background: url("../img/Gambeta.jpg") no-repeat;
+  background-size: 100% auto;
+  text-align: center;
 }
 
 page-home {
@@ -28345,7 +28373,7 @@ page-home .font-title {
 }
 
 #btn_play {
-  height: 35%;
+  height: 30vw;
   margin-top: 32.5%;
   opacity: 0.55;
 }
@@ -28363,7 +28391,7 @@ page-login .margin-txt {
 }
 
 page-login .login {
-  background: url("img/Fondo2.png") no-repeat;
+  background: url("../img/Fondo2.png") no-repeat;
   -webkit-background-size: 120% auto;
 }
 

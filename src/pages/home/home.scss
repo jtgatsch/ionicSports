@@ -187,7 +187,6 @@ page-home {
 	height:100px;
 	}
 	
-	
 	#columna-ejemplos{
 		background-color: white;
 		margin:0px;
@@ -197,6 +196,7 @@ page-home {
 		-moz-box-shadow: -2px 0px 6px 1px rgba(65,65,65,1);
 		box-shadow: -2px 0px 6px 1px rgba(65,65,65,1);
 	}
+
 	#columna-video-actual{
 		padding:0px;
 		margin:0px;
@@ -208,33 +208,32 @@ page-home {
 	
 	#contenedor-video-actual{
 		padding:0px;
-		margin-top:-6%; 
+		margin-top:-6%;
 		position: relative;
 		z-index:1;
 	}
 	
 	#gridSuperior{
-	padding-top:10px;
-	
-    z-index: 10000005;
-    position: relative;
-    background-color:#fff ;
-    border: 1px solid #ffffff; 
-    margin-left:25px; 
-	margin-left:0px; 
-     background-color:#fff ;
-    border: 1px solid #ffffff; 
-    margin-left:25px; 
-	margin-left:0px; 
-    -webkit-box-shadow: 0px 4px 3px rgba(50, 50, 50, 0.5);
-    -moz-box-shadow:    0px 4px 3px rgba(50, 50, 50, 0.5);
-    box-shadow:         0px 4px 3px rgba(50, 50, 50, 0.5);
+		padding-top:10px;
+		z-index: 10000005;
+	    position: relative;
+	    background-color:#fff ;
+	    border: 1px solid #ffffff; 
+	    margin-left:25px; 
+		margin-left:0px; 
+     	background-color:#fff ;
+	    border: 1px solid #ffffff; 
+	    margin-left:25px; 
+		margin-left:0px; 
+	    -webkit-box-shadow: 0px 4px 3px rgba(50, 50, 50, 0.5);
+	    -moz-box-shadow:    0px 4px 3px rgba(50, 50, 50, 0.5);
+	    box-shadow:         0px 4px 3px rgba(50, 50, 50, 0.5);
 	}
 	
 	
 	#btn_play{
 		
-		height: 35%;
+		height: 30vw;
 		margin-top: 32.5%;
 		opacity: 0.55;
 	}
